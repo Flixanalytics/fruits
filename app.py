@@ -46,7 +46,7 @@ img = st.file_uploader("Upload an image of a fruit", type=["jpg", "jpeg", "png"]
 img_width,img_height=180,180
 if img:
     img = load_img(img,target_size=(img_width,img_height))
-    st.image(img, caption="Uploaded Image", use_column_width=False)
+    st.image(img, caption="Uploaded Image",  use_container_width=False)
 
     img_arr = array_to_img(img)
     img_1 = tf.expand_dims(img_arr,0)
