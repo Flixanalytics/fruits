@@ -42,7 +42,7 @@ This model leverages deep learning techniques to identify fruits in images with 
 """)
 # File uploader for images
 
-img = st.file_uploader("Upload an image of a fruit", type=["jpg", "jpeg", "png"])
+img = st.file_uploader("Upload an image of a fruit", type=["jpg", "jpeg", "png", "webp"])
 img_width,img_height=180,180
 if img:
     img = load_img(img,target_size=(img_width,img_height))
